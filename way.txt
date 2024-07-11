@@ -1,0 +1,57 @@
+(1) to center block element horizontally and vertically => margin: calc((100vh - 200px)/2) auto;
+
+----------------------------------------------------------------------------------------------------------
+
+(2) to center element horizontally and vertically =>
+    to parent element  => position: relative;
+                        width: 100%;
+                        height: 100vh;
+
+    to child element => position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        -webkit-transform: translate(-50%,-50%);
+                        -moz-transform: translate(-50%,-50%);
+                        -ms-transform: translate(-50%,-50%);
+                        -o-transform: translate(-50%,-50%);
+    
+--------------------------------------------------------------------------------------------------------
+
+(3) to center element horizontally and vertically => use flexbox
+    to parent element => display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100vh
+
+-----------------------------------------------------------------------------------------------------------
+
+(4) to center element horizontally and vertically => use grid
+    to parent element => display: grid;
+                        justify-items: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100vh
+
+----------------------------------------------------------------------------------------------------------
+
+(5) to center element horizontally => use
+    to parent element => text-align:center;
+    to child element => display:inline-block;
+
+------------------------------------------------------------------------------------------------------------
+
+(6) to center element horizontally and vertically => use Pseudo Elements like after & position.
+    to element(parent element) => position: relative;
+    to element::after{} (child element) => content: "";
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            width: 50%;
+                                            height: 50%;
+                                            transform: translate(-50%,-50%);
+                                            -webkit-transform: translate(-50%,-50%);
+                                            -moz-transform: translate(-50%,-50%);
+                                            -ms-transform: translate(-50%,-50%);
+                                            -o-transform: translate(-50%,-50%);
